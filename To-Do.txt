@@ -1,0 +1,24 @@
+DONE_______________Ability to get Edge Data
+
+DONE_______________Get CORRECT Edge Data
+
+Get Edge Data for Each Player and APPEND to CURRENT PLAYER DATA under the "edge: " selector
+
+Get Edge Data for each Team and append to current team data under the "edge: " selector
+
+
+Separate out Data gathering from API
+
+Store Data somewhere
+
+Setup to gather fresh data every afternoon
+
+Setup API to pull from new database
+
+BING BONG
+
+Store historical data to charge for at a later date
+
+Sync AWS repo and github: https://medium.com/ankercloud-engineering/syncing-github-repositories-to-aws-code-commit-using-github-actions-6e0500606634 
+
+More info about aws: https://k21academy.com/amazon-web-services/aws-devops-vs-azure-devops/#:~:text=AWS%20DevOps%20provides%20Amazon%20Elastic,of%20Kubernetes%20clusters%20on%20AWS.
