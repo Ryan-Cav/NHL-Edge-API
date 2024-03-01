@@ -1,0 +1,27 @@
+version: "3.8"
+
+services:
+  mongodb:
+    build:
+      context: ./mongodb
+    ports:
+      - "27017:27017"
+    volumes:
+      - ./mongodb/data:/data/db
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: password123
+
+  fastapi:
+    build:
+      context: ./fastapi
+    ports:
+      - "8000:8000"
+    depends_on:
+      - mongodb
+
+  data_collection:
+    build:
+      context: ./data_collection
+    depends_on:
+      - mongodb
