@@ -1,27 +1,38 @@
 version: "3.8"
 
 services:
+  mongodb-init:
+    image: mongo:latest
+    volumes:
+      - mongodb_data:/docker-entrypoint-initdb.d
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: password123
+    command: [ "mongod", "--bind_ip_all", "--smallfiles" ] # Ensure MongoDB is running and can accept connections
+
   mongodb:
     build:
       context: ./mongodb
     ports:
       - "27017:27017"
     volumes:
-      - ./mongodb/data:/data/db
-    environment:
-      MONGO_INITDB_ROOT_USERNAME: root
-      MONGO_INITDB_ROOT_PASSWORD: password123
+      - mongodb_data:/data/db
+    depends_on:
+      - mongodb-init
 
   fastapi:
     build:
-      context: ./fastapi
+      context: ./Edge_Data_/API
     ports:
       - "8000:8000"
     depends_on:
-      - mongodb
+      - data_collection
 
   data_collection:
     build:
-      context: ./data_collection
+      context: ./Get_Edge_Data
     depends_on:
-      - mongodb
+      - mongodb-init
+
+volumes:
+  mongodb_data: # Named volume for MongoDB data

@@ -17,4 +17,4 @@ RUN pip install -r requirements.txt
 COPY . .
 
 # Command to run your Selenium tests
-CMD ["python", "./scripts/getPlayerData.py", "&&", "python", "./scripts/getEdgeData.py"]
+CMD ["python", "./scripts/getPlayerData.py", "&&", "python", "./scripts/getEdgeData.py", "&&", "python", "./scripts/sendData.py"]
