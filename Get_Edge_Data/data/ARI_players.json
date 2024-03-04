@@ -216,24 +216,6 @@
     "team": "Arizona Coyotes"
   },
   {
-    "id": 8480008,
-    "headshot": "https://assets.nhle.com/mugs/nhl/20232024/ARI/8480008.png",
-    "firstName": "Adam",
-    "lastName": "Ruzicka",
-    "sweaterNumber": 83,
-    "positionCode": "C",
-    "shootsCatches": "L",
-    "heightInInches": 76,
-    "weightInPounds": 215,
-    "heightInCentimeters": 193,
-    "weightInKilograms": 98,
-    "birthDate": "1999-05-11",
-    "birthCity": "Bratislava",
-    "birthCountry": "SVK",
-    "birthStateProvince": "",
-    "team": "Arizona Coyotes"
-  },
-  {
     "id": 8477951,
     "headshot": "https://assets.nhle.com/mugs/nhl/20232024/ARI/8477951.png",
     "firstName": "Nick",
@@ -447,24 +429,6 @@
     "birthCity": "Trebic",
     "birthCountry": "CZE",
     "birthStateProvince": "",
-    "team": "Arizona Coyotes"
-  },
-  {
-    "id": 8480191,
-    "headshot": "https://assets.nhle.com/mugs/nhl/20232024/ARI/8480191.png",
-    "firstName": "Matt",
-    "lastName": "Villalta",
-    "sweaterNumber": 31,
-    "positionCode": "G",
-    "shootsCatches": "L",
-    "heightInInches": 75,
-    "weightInPounds": 190,
-    "heightInCentimeters": 191,
-    "weightInKilograms": 86,
-    "birthDate": "1999-06-03",
-    "birthCity": "Kingston",
-    "birthCountry": "CAN",
-    "birthStateProvince": "Ontario",
     "team": "Arizona Coyotes"
   }
 ]

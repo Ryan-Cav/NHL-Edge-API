@@ -1,23 +1,5 @@
 [
   {
-    "id": 8480205,
-    "headshot": "https://assets.nhle.com/mugs/nhl/20232024/CBJ/8480205.png",
-    "firstName": "Emil",
-    "lastName": "Bemstrom",
-    "sweaterNumber": 52,
-    "positionCode": "R",
-    "shootsCatches": "R",
-    "heightInInches": 72,
-    "weightInPounds": 195,
-    "heightInCentimeters": 183,
-    "weightInKilograms": 88,
-    "birthDate": "1999-06-01",
-    "birthCity": "Nykoping",
-    "birthCountry": "SWE",
-    "birthStateProvince": "",
-    "team": "Columbus Blue Jackets"
-  },
-  {
     "id": 8482475,
     "headshot": "https://assets.nhle.com/mugs/nhl/20232024/CBJ/8482475.png",
     "firstName": "Yegor",
@@ -159,6 +141,24 @@
     "birthCity": "Barnaul",
     "birthCountry": "RUS",
     "birthStateProvince": "",
+    "team": "Columbus Blue Jackets"
+  },
+  {
+    "id": 8479423,
+    "headshot": "https://assets.nhle.com/mugs/nhl/20232024/CBJ/8479423.png",
+    "firstName": "Alexander",
+    "lastName": "Nylander",
+    "sweaterNumber": 92,
+    "positionCode": "L",
+    "shootsCatches": "R",
+    "heightInInches": 73,
+    "weightInPounds": 192,
+    "heightInCentimeters": 185,
+    "weightInKilograms": 87,
+    "birthDate": "1998-03-02",
+    "birthCity": "Calgary",
+    "birthCountry": "CAN",
+    "birthStateProvince": "Alberta",
     "team": "Columbus Blue Jackets"
   },
   {

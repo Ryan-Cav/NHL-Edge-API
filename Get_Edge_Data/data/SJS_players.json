@@ -360,24 +360,6 @@
     "team": "San Jose Sharks"
   },
   {
-    "id": 8479439,
-    "headshot": "https://assets.nhle.com/mugs/nhl/20232024/SJS/8479439.png",
-    "firstName": "Jacob",
-    "lastName": "MacDonald",
-    "sweaterNumber": 9,
-    "positionCode": "D",
-    "shootsCatches": "L",
-    "heightInInches": 72,
-    "weightInPounds": 204,
-    "heightInCentimeters": 183,
-    "weightInKilograms": 93,
-    "birthDate": "1993-02-26",
-    "birthCity": "Portland",
-    "birthCountry": "USA",
-    "birthStateProvince": "Oregon",
-    "team": "San Jose Sharks"
-  },
-  {
     "id": 8481537,
     "headshot": "https://assets.nhle.com/mugs/nhl/20232024/SJS/8481537.png",
     "firstName": "Nikita",
@@ -465,6 +447,24 @@
     "birthCity": "Thunder Bay",
     "birthCountry": "CAN",
     "birthStateProvince": "Ontario",
+    "team": "San Jose Sharks"
+  },
+  {
+    "id": 8480992,
+    "headshot": "https://assets.nhle.com/mugs/nhl/20232024/SJS/8480992.png",
+    "firstName": "Magnus",
+    "lastName": "Chrona",
+    "sweaterNumber": 30,
+    "positionCode": "G",
+    "shootsCatches": "L",
+    "heightInInches": 76,
+    "weightInPounds": 194,
+    "heightInCentimeters": 193,
+    "weightInKilograms": 88,
+    "birthDate": "2000-08-28",
+    "birthCity": "Skelleftea",
+    "birthCountry": "SWE",
+    "birthStateProvince": "",
     "team": "San Jose Sharks"
   },
   {

@@ -288,6 +288,24 @@
     "team": "Toronto Maple Leafs"
   },
   {
+    "id": 8470966,
+    "headshot": "https://assets.nhle.com/mugs/nhl/20232024/TOR/8470966.png",
+    "firstName": "Mark",
+    "lastName": "Giordano",
+    "sweaterNumber": 55,
+    "positionCode": "D",
+    "shootsCatches": "L",
+    "heightInInches": 72,
+    "weightInPounds": 202,
+    "heightInCentimeters": 183,
+    "weightInKilograms": 92,
+    "birthDate": "1983-10-03",
+    "birthCity": "Toronto",
+    "birthCountry": "CAN",
+    "birthStateProvince": "Ontario",
+    "team": "Toronto Maple Leafs"
+  },
+  {
     "id": 8475906,
     "headshot": "https://assets.nhle.com/mugs/nhl/20232024/TOR/8475906.png",
     "firstName": "John",
@@ -411,24 +429,6 @@
     "birthCity": "Vancouver",
     "birthCountry": "CAN",
     "birthStateProvince": "British Columbia",
-    "team": "Toronto Maple Leafs"
-  },
-  {
-    "id": 8483546,
-    "headshot": "https://assets.nhle.com/mugs/nhl/20232024/TOR/8483546.png",
-    "firstName": "Marshall",
-    "lastName": "Rifai",
-    "sweaterNumber": 83,
-    "positionCode": "D",
-    "shootsCatches": "L",
-    "heightInInches": 72,
-    "weightInPounds": 185,
-    "heightInCentimeters": 183,
-    "weightInKilograms": 84,
-    "birthDate": "1998-03-16",
-    "birthCity": "Beaconsfield",
-    "birthCountry": "CAN",
-    "birthStateProvince": "Quebec",
     "team": "Toronto Maple Leafs"
   },
   {

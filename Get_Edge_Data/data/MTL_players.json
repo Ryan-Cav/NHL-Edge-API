@@ -126,24 +126,6 @@
     "team": "Montr\u00c3\u00a9al Canadiens"
   },
   {
-    "id": 8479330,
-    "headshot": "https://assets.nhle.com/mugs/nhl/20232024/MTL/8479330.png",
-    "firstName": "Brandon",
-    "lastName": "Gignac",
-    "sweaterNumber": 74,
-    "positionCode": "C",
-    "shootsCatches": "L",
-    "heightInInches": 71,
-    "weightInPounds": 170,
-    "heightInCentimeters": 180,
-    "weightInKilograms": 77,
-    "birthDate": "1997-11-07",
-    "birthCity": "Repentigny",
-    "birthCountry": "CAN",
-    "birthStateProvince": "Quebec",
-    "team": "Montr\u00c3\u00a9al Canadiens"
-  },
-  {
     "id": 8481093,
     "headshot": "https://assets.nhle.com/mugs/nhl/20232024/MTL/8481093.png",
     "firstName": "Rafael",
@@ -267,6 +249,24 @@
     "birthCity": "London",
     "birthCountry": "CAN",
     "birthStateProvince": "Ontario",
+    "team": "Montr\u00c3\u00a9al Canadiens"
+  },
+  {
+    "id": 8478400,
+    "headshot": "https://assets.nhle.com/mugs/nhl/20232024/MTL/8478400.png",
+    "firstName": "Colin",
+    "lastName": "White",
+    "sweaterNumber": 36,
+    "positionCode": "C",
+    "shootsCatches": "R",
+    "heightInInches": 73,
+    "weightInPounds": 194,
+    "heightInCentimeters": 185,
+    "weightInKilograms": 88,
+    "birthDate": "1997-01-30",
+    "birthCity": "Boston",
+    "birthCountry": "USA",
+    "birthStateProvince": "Massachusetts",
     "team": "Montr\u00c3\u00a9al Canadiens"
   },
   {

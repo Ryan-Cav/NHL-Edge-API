@@ -126,6 +126,24 @@
     "team": "Ottawa Senators"
   },
   {
+    "id": 8479772,
+    "headshot": "https://assets.nhle.com/mugs/nhl/20232024/OTT/8479772.png",
+    "firstName": "Zack",
+    "lastName": "MacEwen",
+    "sweaterNumber": 17,
+    "positionCode": "R",
+    "shootsCatches": "R",
+    "heightInInches": 76,
+    "weightInPounds": 240,
+    "heightInCentimeters": 193,
+    "weightInKilograms": 109,
+    "birthDate": "1996-07-08",
+    "birthCity": "Charlottetown",
+    "birthCountry": "CAN",
+    "birthStateProvince": "Prince Edward Island",
+    "team": "Ottawa Senators"
+  },
+  {
     "id": 8480064,
     "headshot": "https://assets.nhle.com/mugs/nhl/20232024/OTT/8480064.png",
     "firstName": "Josh",

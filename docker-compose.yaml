@@ -22,7 +22,7 @@ services:
 
   fastapi:
     build:
-      context: ./Edge_Data_/API
+      context: ./Edge_Data_API
     ports:
       - "8000:8000"
     depends_on:
@@ -32,7 +32,7 @@ services:
     build:
       context: ./Get_Edge_Data
     depends_on:
-      - mongodb-init
+      - mongodb
 
 volumes:
   mongodb_data: # Named volume for MongoDB data

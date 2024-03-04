@@ -144,6 +144,24 @@
     "team": "New York Islanders"
   },
   {
+    "id": 8481237,
+    "headshot": "https://assets.nhle.com/mugs/nhl/20232024/NYI/8481237.png",
+    "firstName": "Kyle",
+    "lastName": "MacLean",
+    "sweaterNumber": 32,
+    "positionCode": "C",
+    "shootsCatches": "L",
+    "heightInInches": 73,
+    "weightInPounds": 190,
+    "heightInCentimeters": 185,
+    "weightInKilograms": 86,
+    "birthDate": "1999-04-29",
+    "birthCity": "Livingston",
+    "birthCountry": "USA",
+    "birthStateProvince": "New Jersey",
+    "team": "New York Islanders"
+  },
+  {
     "id": 8474709,
     "headshot": "https://assets.nhle.com/mugs/nhl/20232024/NYI/8474709.png",
     "firstName": "Matt",

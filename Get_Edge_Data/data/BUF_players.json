@@ -270,24 +270,6 @@
     "team": "Buffalo Sabres"
   },
   {
-    "id": 8479348,
-    "headshot": "https://assets.nhle.com/mugs/nhl/20232024/BUF/8479348.png",
-    "firstName": "Kale",
-    "lastName": "Clague",
-    "sweaterNumber": 38,
-    "positionCode": "D",
-    "shootsCatches": "L",
-    "heightInInches": 72,
-    "weightInPounds": 190,
-    "heightInCentimeters": 183,
-    "weightInKilograms": 86,
-    "birthDate": "1998-06-05",
-    "birthCity": "Regina",
-    "birthCountry": "CAN",
-    "birthStateProvince": "Saskatchewan",
-    "team": "Buffalo Sabres"
-  },
-  {
     "id": 8477365,
     "headshot": "https://assets.nhle.com/mugs/nhl/20232024/BUF/8477365.png",
     "firstName": "Connor",
@@ -447,24 +429,6 @@
     "birthCity": "Espoo",
     "birthCountry": "FIN",
     "birthStateProvince": "",
-    "team": "Buffalo Sabres"
-  },
-  {
-    "id": 8474682,
-    "headshot": "https://assets.nhle.com/mugs/nhl/20232024/BUF/8474682.png",
-    "firstName": "Dustin",
-    "lastName": "Tokarski",
-    "sweaterNumber": 31,
-    "positionCode": "G",
-    "shootsCatches": "L",
-    "heightInInches": 72,
-    "weightInPounds": 198,
-    "heightInCentimeters": 183,
-    "weightInKilograms": 90,
-    "birthDate": "1989-09-16",
-    "birthCity": "Watson",
-    "birthCountry": "CAN",
-    "birthStateProvince": "Saskatchewan",
     "team": "Buffalo Sabres"
   }
 ]

@@ -4,7 +4,7 @@ import requests
 
 def getPlayerData():
     # Load team data from JSON file
-    with open("../data/teams.json", "r") as teams_file:
+    with open("data/teams.json", "r") as teams_file:
         teams = json.load(teams_file)
 
     # Define the base endpoint URL
@@ -65,7 +65,7 @@ def getPlayerData():
             filtered_data = json.dumps(formatted_players, indent=2)
 
             # Write the filtered data to a new JSON file for each team
-            output_file_path = f"../data/{raw_tricode}_players.json"
+            output_file_path = f"data/{raw_tricode}_players.json"
             with open(output_file_path, "w") as output_file:
                 output_file.write(filtered_data)
 
@@ -75,7 +75,9 @@ def getPlayerData():
             print(f"Failed to retrieve data for {team['fullName']}. Status code:", response.status_code)
 
     # Write all player data to a single "players.json" file
-    with open("../data/players.json", "w") as players_file:
+    with open("data/players.json", "w") as players_file:
         json.dump(all_players, players_file, indent=2)
 
     print("All player data has been written to players.json")
+
+getPlayerData()

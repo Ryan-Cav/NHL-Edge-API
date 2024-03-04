@@ -36,6 +36,24 @@
     "team": "St. Louis Blues"
   },
   {
+    "id": 8482737,
+    "headshot": "https://assets.nhle.com/mugs/nhl/20232024/STL/8482737.png",
+    "firstName": "Zack",
+    "lastName": "Bolduc",
+    "sweaterNumber": 76,
+    "positionCode": "C",
+    "shootsCatches": "L",
+    "heightInInches": 72,
+    "weightInPounds": 187,
+    "heightInCentimeters": 183,
+    "weightInKilograms": 85,
+    "birthDate": "2003-02-24",
+    "birthCity": "Trois-Rivi\u00e8res",
+    "birthCountry": "CAN",
+    "birthStateProvince": "Quebec",
+    "team": "St. Louis Blues"
+  },
+  {
     "id": 8477402,
     "headshot": "https://assets.nhle.com/mugs/nhl/20232024/STL/8477402.png",
     "firstName": "Pavel",
@@ -252,24 +270,6 @@
     "team": "St. Louis Blues"
   },
   {
-    "id": 8482516,
-    "headshot": "https://assets.nhle.com/mugs/nhl/20232024/STL/8482516.png",
-    "firstName": "Matthew",
-    "lastName": "Kessel",
-    "sweaterNumber": 51,
-    "positionCode": "D",
-    "shootsCatches": "R",
-    "heightInInches": 74,
-    "weightInPounds": 205,
-    "heightInCentimeters": 188,
-    "weightInKilograms": 93,
-    "birthDate": "2000-06-23",
-    "birthCity": "Phoenix",
-    "birthCountry": "USA",
-    "birthStateProvince": "Arizona",
-    "team": "St. Louis Blues"
-  },
-  {
     "id": 8476792,
     "headshot": "https://assets.nhle.com/mugs/nhl/20232024/STL/8476792.png",
     "firstName": "Torey",
@@ -339,24 +339,6 @@
     "birthCity": "Hibbing",
     "birthCountry": "USA",
     "birthStateProvince": "Minnesota",
-    "team": "St. Louis Blues"
-  },
-  {
-    "id": 8480157,
-    "headshot": "https://assets.nhle.com/mugs/nhl/20232024/STL/8480157.png",
-    "firstName": "Calle",
-    "lastName": "Rosen",
-    "sweaterNumber": 43,
-    "positionCode": "D",
-    "shootsCatches": "L",
-    "heightInInches": 73,
-    "weightInPounds": 188,
-    "heightInCentimeters": 185,
-    "weightInKilograms": 85,
-    "birthDate": "1994-02-02",
-    "birthCity": "Vaxjo",
-    "birthCountry": "SWE",
-    "birthStateProvince": "",
     "team": "St. Louis Blues"
   },
   {

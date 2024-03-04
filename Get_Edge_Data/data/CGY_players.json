@@ -360,24 +360,6 @@
     "team": "Calgary Flames"
   },
   {
-    "id": 8475690,
-    "headshot": "https://assets.nhle.com/mugs/nhl/20232024/CGY/8475690.png",
-    "firstName": "Chris",
-    "lastName": "Tanev",
-    "sweaterNumber": 8,
-    "positionCode": "D",
-    "shootsCatches": "R",
-    "heightInInches": 74,
-    "weightInPounds": 193,
-    "heightInCentimeters": 188,
-    "weightInKilograms": 88,
-    "birthDate": "1989-12-20",
-    "birthCity": "Toronto",
-    "birthCountry": "CAN",
-    "birthStateProvince": "Ontario",
-    "team": "Calgary Flames"
-  },
-  {
     "id": 8477346,
     "headshot": "https://assets.nhle.com/mugs/nhl/20232024/CGY/8477346.png",
     "firstName": "MacKenzie",

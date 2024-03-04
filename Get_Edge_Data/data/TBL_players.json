@@ -1,23 +1,5 @@
 [
   {
-    "id": 8479718,
-    "headshot": "https://assets.nhle.com/mugs/nhl/20232024/TBL/8479718.png",
-    "firstName": "Alex",
-    "lastName": "Barr\u00e9-Boulet",
-    "sweaterNumber": 12,
-    "positionCode": "C",
-    "shootsCatches": "L",
-    "heightInInches": 70,
-    "weightInPounds": 178,
-    "heightInCentimeters": 178,
-    "weightInKilograms": 81,
-    "birthDate": "1997-05-21",
-    "birthCity": "Montmagny",
-    "birthCountry": "CAN",
-    "birthStateProvince": "Quebec",
-    "team": "Tampa Bay Lightning"
-  },
-  {
     "id": 8482070,
     "headshot": "https://assets.nhle.com/mugs/nhl/20232024/TBL/8482070.png",
     "firstName": "Mitchell",
@@ -267,6 +249,24 @@
     "birthCity": "Kosice",
     "birthCountry": "SVK",
     "birthStateProvince": "",
+    "team": "Tampa Bay Lightning"
+  },
+  {
+    "id": 8481719,
+    "headshot": "https://assets.nhle.com/mugs/nhl/20232024/TBL/8481719.png",
+    "firstName": "Maxwell",
+    "lastName": "Crozier",
+    "sweaterNumber": 65,
+    "positionCode": "D",
+    "shootsCatches": "R",
+    "heightInInches": 73,
+    "weightInPounds": 197,
+    "heightInCentimeters": 185,
+    "weightInKilograms": 89,
+    "birthDate": "2000-04-19",
+    "birthCity": "Calgary",
+    "birthCountry": "CAN",
+    "birthStateProvince": "Alberta",
     "team": "Tampa Bay Lightning"
   },
   {

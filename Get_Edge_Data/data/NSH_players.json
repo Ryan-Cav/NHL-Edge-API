@@ -1,23 +1,5 @@
 [
   {
-    "id": 8481585,
-    "headshot": "https://assets.nhle.com/mugs/nhl/20232024/NSH/8481585.png",
-    "firstName": "Egor",
-    "lastName": "Afanasyev",
-    "sweaterNumber": 70,
-    "positionCode": "L",
-    "shootsCatches": "L",
-    "heightInInches": 76,
-    "weightInPounds": 211,
-    "heightInCentimeters": 193,
-    "weightInKilograms": 96,
-    "birthDate": "2001-01-23",
-    "birthCity": "Tver",
-    "birthCountry": "RUS",
-    "birthStateProvince": "",
-    "team": "Nashville Predators"
-  },
-  {
     "id": 8482146,
     "headshot": "https://assets.nhle.com/mugs/nhl/20232024/NSH/8482146.png",
     "firstName": "Luke",

@@ -36,6 +36,24 @@
     "team": "New Jersey Devils"
   },
   {
+    "id": 8483531,
+    "headshot": "https://assets.nhle.com/mugs/nhl/20232024/NJD/8483531.png",
+    "firstName": "Brian",
+    "lastName": "Halonen",
+    "sweaterNumber": 48,
+    "positionCode": "L",
+    "shootsCatches": "R",
+    "heightInInches": 72,
+    "weightInPounds": 207,
+    "heightInCentimeters": 183,
+    "weightInKilograms": 94,
+    "birthDate": "1999-01-11",
+    "birthCity": "Delano",
+    "birthCountry": "USA",
+    "birthStateProvince": "Minnesota",
+    "team": "New Jersey Devils"
+  },
+  {
     "id": 8475287,
     "headshot": "https://assets.nhle.com/mugs/nhl/20232024/NJD/8475287.png",
     "firstName": "Erik",

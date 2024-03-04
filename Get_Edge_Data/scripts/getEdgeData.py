@@ -8,12 +8,15 @@ from selenium.webdriver.support import expected_conditions as EC
 
 def main():
     # Load teams data
-    with open('../data/teams.json', 'r') as teams_file:
+    with open('data/teams.json', 'r') as teams_file:
         teams_data = json.load(teams_file)
 
     # Configure Chrome options
     chrome_options = Options()
-    #chrome_options.add_argument('--headless')  # Enable headless mode
+    chrome_options.add_argument('--headless')  # Enable headless mode
+    chrome_options.add_argument('--no-sandbox')
+    chrome_options.add_argument('--disable-dev-shm-usage')
+    
 
     # Initialize WebDriver
     driver = webdriver.Chrome(options=chrome_options)
@@ -24,7 +27,7 @@ def main():
     # Iterate over teams
     for team_data in teams_data:
         team_id = team_data['triCode']
-        players_file = f'../data/{team_id}_players.json'
+        players_file = f'data/{team_id}_players.json'
 
         # Load players data for the current team
         with open(players_file, 'r') as players_file:
@@ -35,6 +38,7 @@ def main():
             player_id = player_data['id']
             position_code = player_data['positionCode']
 
+            print(player_data["team"])
             # URL based on position code
             if position_code == 'G':
                 url = f'https://edge.nhl.com/en/goalie/{player_id}'
@@ -74,11 +78,11 @@ def main():
                 error_players.append(player_data)
 
     # Write error players data to the error file
-    with open('../data/error_players.json', 'w') as f:
+    with open('data/error_players.json', 'w') as f:
         json.dump(error_players, f, indent=4)
 
     # Write updated player data back to the JSON file
-    with open('../data/scraped_data.json', 'a') as f:
+    with open('data/scraped_data.json', 'a') as f:
         json.dump(all_player_data, f, indent=4)
         f.write('\n')
     # Close the WebDriver
@@ -108,5 +112,4 @@ def process_table_data(table, player_data):
     return player_data
     
 
-if __name__ == "__main__":
-    main()
+main()

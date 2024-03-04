@@ -36,6 +36,24 @@
     "team": "Vegas Golden Knights"
   },
   {
+    "id": 8482153,
+    "headshot": "https://assets.nhle.com/mugs/nhl/20232024/VGK/8482153.png",
+    "firstName": "Brendan",
+    "lastName": "Brisson",
+    "sweaterNumber": 19,
+    "positionCode": "C",
+    "shootsCatches": "L",
+    "heightInInches": 72,
+    "weightInPounds": 191,
+    "heightInCentimeters": 183,
+    "weightInKilograms": 87,
+    "birthDate": "2001-10-22",
+    "birthCity": "Los Angeles",
+    "birthCountry": "USA",
+    "birthStateProvince": "California",
+    "team": "Vegas Golden Knights"
+  },
+  {
     "id": 8477478,
     "headshot": "https://assets.nhle.com/mugs/nhl/20232024/VGK/8477478.png",
     "firstName": "William",
@@ -69,24 +87,6 @@
     "birthCity": "Canton",
     "birthCountry": "USA",
     "birthStateProvince": "Michigan",
-    "team": "Vegas Golden Knights"
-  },
-  {
-    "id": 8480844,
-    "headshot": "https://assets.nhle.com/mugs/nhl/20232024/VGK/8480844.png",
-    "firstName": "Grigori",
-    "lastName": "Denisenko",
-    "sweaterNumber": 54,
-    "positionCode": "L",
-    "shootsCatches": "R",
-    "heightInInches": 71,
-    "weightInPounds": 196,
-    "heightInCentimeters": 180,
-    "weightInKilograms": 89,
-    "birthDate": "2000-06-24",
-    "birthCity": "Novosibirsk",
-    "birthCountry": "RUS",
-    "birthStateProvince": "",
     "team": "Vegas Golden Knights"
   },
   {
@@ -231,6 +231,24 @@
     "birthCity": "Minot",
     "birthCountry": "USA",
     "birthStateProvince": "North Dakota",
+    "team": "Vegas Golden Knights"
+  },
+  {
+    "id": 8480776,
+    "headshot": "https://assets.nhle.com/mugs/nhl/20232024/VGK/8480776.png",
+    "firstName": "Sheldon",
+    "lastName": "Rempal",
+    "sweaterNumber": 56,
+    "positionCode": "R",
+    "shootsCatches": "R",
+    "heightInInches": 71,
+    "weightInPounds": 173,
+    "heightInCentimeters": 180,
+    "weightInKilograms": 78,
+    "birthDate": "1995-08-07",
+    "birthCity": "Calgary",
+    "birthCountry": "CAN",
+    "birthStateProvince": "Alberta",
     "team": "Vegas Golden Knights"
   },
   {

@@ -144,24 +144,6 @@
     "team": "Colorado Avalanche"
   },
   {
-    "id": 8478028,
-    "headshot": "https://assets.nhle.com/mugs/nhl/20232024/COL/8478028.png",
-    "firstName": "Fredrik",
-    "lastName": "Olofsson",
-    "sweaterNumber": 22,
-    "positionCode": "L",
-    "shootsCatches": "L",
-    "heightInInches": 74,
-    "weightInPounds": 190,
-    "heightInCentimeters": 188,
-    "weightInKilograms": 86,
-    "birthDate": "1996-05-27",
-    "birthCity": "Helsingborg",
-    "birthCountry": "SWE",
-    "birthStateProvince": "",
-    "team": "Colorado Avalanche"
-  },
-  {
     "id": 8470610,
     "headshot": "https://assets.nhle.com/mugs/nhl/20232024/COL/8470610.png",
     "firstName": "Zach",
@@ -236,7 +218,7 @@
   {
     "id": 8481524,
     "headshot": "https://assets.nhle.com/mugs/nhl/20232024/COL/8481524.png",
-    "firstName": "Bowen ",
+    "firstName": "Bowen",
     "lastName": "Byram",
     "sweaterNumber": 4,
     "positionCode": "D",

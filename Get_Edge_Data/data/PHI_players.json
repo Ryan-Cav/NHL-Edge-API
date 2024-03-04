@@ -18,6 +18,24 @@
     "team": "Philadelphia Flyers"
   },
   {
+    "id": 8481553,
+    "headshot": "https://assets.nhle.com/mugs/nhl/20232024/PHI/8481553.png",
+    "firstName": "Bobby",
+    "lastName": "Brink",
+    "sweaterNumber": 10,
+    "positionCode": "R",
+    "shootsCatches": "R",
+    "heightInInches": 68,
+    "weightInPounds": 169,
+    "heightInCentimeters": 173,
+    "weightInKilograms": 77,
+    "birthDate": "2001-07-08",
+    "birthCity": "Minnetonka",
+    "birthCountry": "USA",
+    "birthStateProvince": "Minnesota",
+    "team": "Philadelphia Flyers"
+  },
+  {
     "id": 8480220,
     "headshot": "https://assets.nhle.com/mugs/nhl/20232024/PHI/8480220.png",
     "firstName": "Noah",
@@ -234,6 +252,24 @@
     "team": "Philadelphia Flyers"
   },
   {
+    "id": 8481521,
+    "headshot": "https://assets.nhle.com/mugs/nhl/20232024/PHI/8481521.png",
+    "firstName": "Ronnie",
+    "lastName": "Attard",
+    "sweaterNumber": 23,
+    "positionCode": "D",
+    "shootsCatches": "R",
+    "heightInInches": 75,
+    "weightInPounds": 208,
+    "heightInCentimeters": 191,
+    "weightInKilograms": 94,
+    "birthDate": "1999-03-20",
+    "birthCity": "White Lake",
+    "birthCountry": "USA",
+    "birthStateProvince": "Michigan",
+    "team": "Philadelphia Flyers"
+  },
+  {
     "id": 8482142,
     "headshot": "https://assets.nhle.com/mugs/nhl/20232024/PHI/8482142.png",
     "firstName": "Jamie",
@@ -414,21 +450,21 @@
     "team": "Philadelphia Flyers"
   },
   {
-    "id": 8477361,
-    "headshot": "https://assets.nhle.com/mugs/nhl/20232024/PHI/8477361.png",
-    "firstName": "Cal",
-    "lastName": "Petersen",
-    "sweaterNumber": 40,
+    "id": 8478433,
+    "headshot": "https://assets.nhle.com/mugs/nhl/20232024/PHI/8478433.png",
+    "firstName": "Felix",
+    "lastName": "Sandstrom",
+    "sweaterNumber": 32,
     "positionCode": "G",
-    "shootsCatches": "R",
+    "shootsCatches": "L",
     "heightInInches": 74,
-    "weightInPounds": 185,
+    "weightInPounds": 211,
     "heightInCentimeters": 188,
-    "weightInKilograms": 84,
-    "birthDate": "1994-10-19",
-    "birthCity": "Waterloo",
-    "birthCountry": "USA",
-    "birthStateProvince": "Iowa",
+    "weightInKilograms": 96,
+    "birthDate": "1997-01-12",
+    "birthCity": "Gavle",
+    "birthCountry": "SWE",
+    "birthStateProvince": "",
     "team": "Philadelphia Flyers"
   }
 ]

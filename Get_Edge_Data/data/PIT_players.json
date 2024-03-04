@@ -18,6 +18,24 @@
     "team": "Pittsburgh Penguins"
   },
   {
+    "id": 8480205,
+    "headshot": "https://assets.nhle.com/mugs/nhl/20232024/PIT/8480205.png",
+    "firstName": "Emil",
+    "lastName": "Bemstrom",
+    "sweaterNumber": 52,
+    "positionCode": "C",
+    "shootsCatches": "R",
+    "heightInInches": 72,
+    "weightInPounds": 195,
+    "heightInCentimeters": 183,
+    "weightInKilograms": 88,
+    "birthDate": "1999-06-01",
+    "birthCity": "Nykoping",
+    "birthCountry": "SWE",
+    "birthStateProvince": "",
+    "team": "Pittsburgh Penguins"
+  },
+  {
     "id": 8470604,
     "headshot": "https://assets.nhle.com/mugs/nhl/20232024/PIT/8470604.png",
     "firstName": "Jeff",
@@ -198,6 +216,24 @@
     "team": "Pittsburgh Penguins"
   },
   {
+    "id": 8481703,
+    "headshot": "https://assets.nhle.com/mugs/nhl/20232024/PIT/8481703.png",
+    "firstName": "Valtteri",
+    "lastName": "Puustinen",
+    "sweaterNumber": 48,
+    "positionCode": "R",
+    "shootsCatches": "R",
+    "heightInInches": 69,
+    "weightInPounds": 183,
+    "heightInCentimeters": 175,
+    "weightInKilograms": 83,
+    "birthDate": "1999-06-04",
+    "birthCity": "Kuopio",
+    "birthCountry": "FIN",
+    "birthStateProvince": "",
+    "team": "Pittsburgh Penguins"
+  },
+  {
     "id": 8476483,
     "headshot": "https://assets.nhle.com/mugs/nhl/20232024/PIT/8476483.png",
     "firstName": "Rickard",
@@ -249,24 +285,6 @@
     "birthCity": "Mimico",
     "birthCountry": "CAN",
     "birthStateProvince": "Ontario",
-    "team": "Pittsburgh Penguins"
-  },
-  {
-    "id": 8478400,
-    "headshot": "https://assets.nhle.com/mugs/nhl/20232024/PIT/8478400.png",
-    "firstName": "Colin",
-    "lastName": "White",
-    "sweaterNumber": 36,
-    "positionCode": "C",
-    "shootsCatches": "R",
-    "heightInInches": 73,
-    "weightInPounds": 194,
-    "heightInCentimeters": 185,
-    "weightInKilograms": 88,
-    "birthDate": "1997-01-30",
-    "birthCity": "Boston",
-    "birthCountry": "USA",
-    "birthStateProvince": "Massachusetts",
     "team": "Pittsburgh Penguins"
   },
   {
