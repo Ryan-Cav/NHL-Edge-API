@@ -1,7 +1,4 @@
-# Starter pipeline
-# Start with a minimal pipeline that you can customize to build and deploy your code.
-# Add steps that build, run tests, deploy, and more:
-# https://aka.ms/yaml
+# Azure Pipeline YAML
 
 trigger:
 - main
@@ -10,10 +7,22 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
+- task: DockerInstaller@0
+  inputs:
+    dockerVersion: '17.09.0-ce'
+    
+- task: DockerCompose@0
+  inputs:
+    containerregistrytype: 'Container Registry'
+    dockerRegistryEndpoint: 'EdgeAPIRegistry'  # Change this to your Docker registry endpoint
+    dockerComposeFile: '**/docker-compose.yml'
+    action: 'Run a Docker Compose command'
 
 - script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
+    mkdir -p artifacts
+  displayName: 'Create Artifacts Directory'
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: 'artifacts'  # Path to your artifacts directory
+    ArtifactName: 'output-files'
