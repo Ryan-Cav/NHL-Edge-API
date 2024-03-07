@@ -1,0 +1,28 @@
+# Azure Pipeline YAML
+
+trigger:
+- main
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- task: DockerInstaller@0
+  inputs:
+    dockerVersion: '17.09.0-ce'
+    
+- task: DockerCompose@0
+  inputs:
+    containerregistrytype: 'Container Registry'
+    dockerRegistryEndpoint: 'EdgeAPIRegistry'  # Change this to your Docker registry endpoint
+    dockerComposeFile: '**/docker-compose.yml'
+    action: 'Run a Docker Compose command'
+
+- script: |
+    mkdir -p artifacts
+  displayName: 'Create Artifacts Directory'
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: 'artifacts'  # Path to your artifacts directory
+    ArtifactName: 'output-files'
