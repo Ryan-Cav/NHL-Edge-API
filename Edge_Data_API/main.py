@@ -4,7 +4,8 @@ from pymongo import MongoClient
 app = FastAPI()
 
 # MongoDB connection
-client = MongoClient('mongodb://localhost:27017/')
+client = MongoClient('mongodb://mongodb:27017/')
+
 db = client['your_database']  # Replace 'your_database' with your MongoDB database name
 players_collection = db['players']  # Replace 'players' with the name of your collection containing players data
 teams_collection = db['teams']  # Replace 'teams' with the name of your collection containing teams data

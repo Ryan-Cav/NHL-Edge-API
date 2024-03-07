@@ -1,14 +1,6 @@
 version: "3.8"
 
 services:
-  mongodb-init:
-    image: mongo:latest
-    volumes:
-      - mongodb_data:/docker-entrypoint-initdb.d
-    environment:
-      MONGO_INITDB_ROOT_USERNAME: root
-      MONGO_INITDB_ROOT_PASSWORD: password123
-    command: [ "mongod", "--bind_ip_all", "--smallfiles" ] # Ensure MongoDB is running and can accept connections
 
   mongodb:
     build:
@@ -17,8 +9,6 @@ services:
       - "27017:27017"
     volumes:
       - mongodb_data:/data/db
-    depends_on:
-      - mongodb-init
 
   fastapi:
     build:

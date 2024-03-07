@@ -3,7 +3,7 @@ from pymongo import MongoClient
 
 def add_data_to_mongodb():
     # MongoDB connection
-    client = MongoClient('mongodb://localhost:27017/')
+    client = MongoClient('mongodb://mongodb:27017/')
     db = client['nhl_edge']  # Replace 'your_database' with your MongoDB database name
     teams_collection = db['teams']  # Replace 'teams' with the name of your collection containing teams data
     players_collection = db['players']  # Replace 'players' with the name of your collection containing players data

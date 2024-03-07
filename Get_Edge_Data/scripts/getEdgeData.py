@@ -82,7 +82,7 @@ def main():
         json.dump(error_players, f, indent=4)
 
     # Write updated player data back to the JSON file
-    with open('data/scraped_data.json', 'a') as f:
+    with open('data/scraped_data.json', 'w') as f:
         json.dump(all_player_data, f, indent=4)
         f.write('\n')
     # Close the WebDriver
