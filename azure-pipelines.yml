@@ -11,6 +11,8 @@ steps:
   inputs:
     dockerVersion: '17.09.0-ce'
     
+- script: tree /F
+  displayName: File Tree
 - task: DockerCompose@0
   inputs:
     containerregistrytype: 'Container Registry'
