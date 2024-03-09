@@ -12,6 +12,11 @@ steps:
     dockerVersion: '17.09.0-ce'
     
 - script: |
+    tree .
+  displayName: 'Display Directory Tree'
+
+
+- script: |
     sudo apt install -y docker-compose
   displayName: 'install docker-compose'
 - task: DockerCompose@0
