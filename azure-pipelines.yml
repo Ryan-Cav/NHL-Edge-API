@@ -20,7 +20,7 @@ steps:
   inputs:
     containerregistrytype: 'Container Registry'
     dockerRegistryEndpoint: 'EdgeAPIRegistry'  # Change this to your Docker registry endpoint
-    dockerComposeFile: 'docker-compose.yml'
+    dockerComposeFile: '/home/vsts/work/1/s/docker-compose.yml'
     action: 'Run a Docker Compose command'
 
 - script: |
