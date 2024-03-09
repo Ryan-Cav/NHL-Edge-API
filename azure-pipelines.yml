@@ -12,10 +12,8 @@ steps:
     dockerVersion: '17.09.0-ce'
     
 - script: |
-    whoami   # Print the user running the pipeline
-    ls -la   # List directory contents with details
-    touch test.txt  # Attempt to create a test file
-  displayName: 'Check Permissions'
+    sudo apt install -y docker-compose
+  displayName: 'install docker-compose'
 - task: DockerCompose@0
   inputs:
     containerregistrytype: 'Container Registry'
