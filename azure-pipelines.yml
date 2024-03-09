@@ -24,6 +24,7 @@ steps:
     containerregistrytype: 'Container Registry'
     dockerRegistryEndpoint: 'EdgeAPIRegistry'  # Change this to your Docker registry endpoint
     dockerComposeFile: 'docker-compose.yaml'
+    dockerComposeCommand: 'up -d'
     action: 'Run a Docker Compose command'
 
 - script: |
