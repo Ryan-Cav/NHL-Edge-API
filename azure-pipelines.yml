@@ -14,14 +14,18 @@ steps:
   displayName: 'Display Directory Tree'
 
 - script: |
-    docker build -t get-data-image Get_Edge_Data
-    docker run --name get-data get-data-image
-    # Check for errors
-    if [ $? -ne 0 ]; then
-      echo "Error: Docker build or run failed."
-      exit 1
-    fi
-  displayName: 'Build and Run Docker Image'
+    pip install selenium==3.141.0
+    pip install requests==2.26.0
+    pip install pymongo
+  displayName: 'Display Directory Tree'
+
+- script: |
+    python Get_Edge_Data/scripts/getPlayerData.py
+  displayName: 'Run Python Script'
+  
+- script: |
+    tree .
+  displayName: 'Display Directory Tree POST SCRIPT'
 
 - script: |
     mkdir -p artifacts
