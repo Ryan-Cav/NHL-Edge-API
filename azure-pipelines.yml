@@ -1,5 +1,3 @@
-# Azure Pipeline YAML
-
 trigger:
 - main
 
@@ -15,17 +13,15 @@ steps:
     tree .
   displayName: 'Display Directory Tree'
 
-
 - script: |
-    sudo apt install -y docker-compose
-  displayName: 'install docker-compose'
-- task: DockerCompose@0
-  inputs:
-    containerregistrytype: 'Container Registry'
-    dockerRegistryEndpoint: 'EdgeAPIRegistry'  # Change this to your Docker registry endpoint
-    dockerComposeFile: 'docker-compose.yaml'
-    dockerComposeCommand: 'up -d'
-    action: 'Run a Docker Compose command'
+    docker build -t get-data-image Get_Edge_Data
+    docker run --name get-data get-data-image
+    # Check for errors
+    if [ $? -ne 0 ]; then
+      echo "Error: Docker build or run failed."
+      exit 1
+    fi
+  displayName: 'Build and Run Docker Image'
 
 - script: |
     mkdir -p artifacts
@@ -33,5 +29,5 @@ steps:
 
 - task: PublishBuildArtifacts@1
   inputs:
-    PathtoPublish: 'artifacts'  # Path to your artifacts directory
-    ArtifactName: 'output-files'
+    PathtoPublish: 'artifacts'
+    ArtifactName: 'get-data-output'
