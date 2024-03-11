@@ -20,7 +20,8 @@ steps:
   displayName: 'Display Directory Tree'
 
 - script: |
-    python Get_Edge_Data/scripts/getPlayerData.py
+    cd Get_Edge_Data
+    python scripts/getPlayerData.py
   displayName: 'Run Python Script'
   
 - script: |
