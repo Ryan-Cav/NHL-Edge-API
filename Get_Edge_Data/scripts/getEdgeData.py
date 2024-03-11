@@ -7,6 +7,8 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 def main():
+    print("Starting edge data")
+
     # Load teams data
     with open('data/teams.json', 'r') as teams_file:
         teams_data = json.load(teams_file)
