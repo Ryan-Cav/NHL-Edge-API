@@ -1,4 +1,4 @@
 #!/bin/bash
 
 echo "HELLO"
-python scripts/getPlayerData.py
+python main.py

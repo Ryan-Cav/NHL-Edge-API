@@ -88,12 +88,12 @@
         "triCode": "CAR"
     },
     {
-        "id": 53,
-        "franchiseId": 28,
-        "fullName": "Arizona Coyotes",
+        "id": 59,
+        "franchiseId": 40,
+        "fullName": "Utah Hockey Club",
         "leagueId": 133,
-        "rawTricode": "ARI",
-        "triCode": "ARI"
+        "rawTricode": "UTA",
+        "triCode": "UTA"
     },
     {
         "id": 20,

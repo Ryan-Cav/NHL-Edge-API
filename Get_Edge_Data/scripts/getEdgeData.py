@@ -1,117 +1,104 @@
 import json
 import time
+from multiprocessing import Pool
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-def main():
-    print("Starting edge data")
-
-    # Load teams data
-    with open('data/teams.json', 'r') as teams_file:
-        teams_data = json.load(teams_file)
-
-    # Configure Chrome options
+def process_player_data(player_data):
+    """Worker function to process data for a single player."""
     chrome_options = Options()
-    chrome_options.add_argument('--headless')  # Enable headless mode
+    chrome_options.add_argument('--headless')
     chrome_options.add_argument('--no-sandbox')
     chrome_options.add_argument('--disable-dev-shm-usage')
     
-
-    # Initialize WebDriver
     driver = webdriver.Chrome(options=chrome_options)
+    driver.set_page_load_timeout(10)
+    
+    player_id = player_data['id']
+    position_code = player_data['positionCode']
+    error_xpath = '//*[@id="profile-section"]/div/div[contains(@class, "nhl-404")]'
+    team_id = player_data['team']
 
-    # Initialize error list
-    error_players = []
+    url = f'https://edge.nhl.com/en/{ "goalie" if position_code == "G" else "skater" }/{player_id}'
+    xpath = f'//*[@id="{"goverview" if position_code == "G" else "overview"}-section-content"]/div[1]/div/table'
+
+    retries = 0
+    while retries < 3:
+        try:
+            driver.get(url)
+            time.sleep(5)
+            wait = WebDriverWait(driver, 20)
+            if driver.find_elements(By.XPATH, error_xpath):
+                driver.quit()
+                return (player_data, "Page not found (nhl-404)")
+
+            table = wait.until(EC.visibility_of_element_located((By.XPATH, xpath)))
+            data = process_table_data(table, player_data)
+            driver.quit()
+            return (data, None)
+        except Exception as e:
+            retries += 1
+            time.sleep(10)
+
+    driver.quit()
+    return (player_data, f"Failed after {retries} retries")
+
+def getEdgeData():
+    """Main function to initiate multiprocessing of player data extraction."""
+    print("Starting edge data")
+
+    with open('data/teams.json', 'r') as teams_file:
+        teams_data = json.load(teams_file)
+
     all_player_data = []
-    # Iterate over teams
+    error_players = []
+    tasks = []
+
     for team_data in teams_data:
         team_id = team_data['triCode']
         players_file = f'data/{team_id}_players.json'
 
-        # Load players data for the current team
-        with open(players_file, 'r') as players_file:
-            players_data = json.load(players_file)
+        with open(players_file, 'r') as pf:
+            players_data = json.load(pf)
 
-        # Iterate over players
         for player_data in players_data:
-            player_id = player_data['id']
-            position_code = player_data['positionCode']
+            player_data['team'] = team_id
+            tasks.append(player_data)
 
-            print(player_data["team"])
-            # URL based on position code
-            if position_code == 'G':
-                url = f'https://edge.nhl.com/en/goalie/{player_id}'
-                xpath = '//*[@id="goverview-section-content"]/div[1]/div/table'
-            else:
-                url = f'https://edge.nhl.com/en/skater/{player_id}'
-                xpath = '//*[@id="overview-section-content"]/div[1]/div/table'
+    with Pool(processes=4) as pool:
+        results = pool.map(process_player_data, tasks)
 
-            # Retry loop
-            retries = 0
-            while retries < 3:
-                try:
-                    # Navigate to player's URL
-                    driver.get(url)
+    for player_result, error in results:
+        if error:
+            error_players.append({'player_data': player_result, 'error': error})
+        else:
+            all_player_data.append(player_result)
 
-                    # Sleep to ensure page loads properly
-                    time.sleep(5)
+    with open('data/scraped_data.json', 'w') as f:
+        json.dump(all_player_data, f, indent=4)
 
-                    # Wait for table to be visible
-                    wait = WebDriverWait(driver, 20)
-                    table = wait.until(EC.visibility_of_element_located((By.XPATH, xpath)))
-
-                    # Extract and process table data
-                    # Inside the loop where you process each player's data:
-                    all_player_data.append(process_table_data(table, player_data))
-
-                    # Break out of the retry loop if successful
-                    break
-                except Exception as e:
-                    print(f"Error processing player {player_id}: {str(e)}")
-                    retries += 1
-                    print(f"Retrying ({retries}/3)...")
-                    time.sleep(10)  # Wait before retrying
-
-            # If retries exceeded, add player to error list
-            if retries == 3:
-                error_players.append(player_data)
-
-    # Write error players data to the error file
     with open('data/error_players.json', 'w') as f:
         json.dump(error_players, f, indent=4)
 
-    # Write updated player data back to the JSON file
-    with open('data/scraped_data.json', 'w') as f:
-        json.dump(all_player_data, f, indent=4)
-        f.write('\n')
-    # Close the WebDriver
-    driver.quit()
+    print("Data extraction complete.")
 
 def process_table_data(table, player_data):
-    # Extract table rows
+    """Extract and process data from the table."""
     rows = table.find_elements(By.XPATH, './tbody/tr')
-
-    # Initialize data dictionary
     data = {}
 
-    # Iterate over rows
     for row in rows:
-        # Extract cell values
         cells = row.find_elements(By.XPATH, './td|th')
-        parent_key = cells[0].text.strip()
-        LA_key = 'League Average'
-        perc_key = 'Percentile'
-        data[parent_key] = cells[1].text.strip()
-        data[LA_key] = cells[2].text.strip()
-        data[perc_key] = cells[3].text.strip()
+        if len(cells) >= 4:
+            parent_key = cells[0].text.strip()
+            data[parent_key] = {
+                'value': cells[1].text.strip(),
+                'league_average': cells[2].text.strip(),
+                'percentile': cells[3].text.strip()
+            }
 
-    # Append scraped data to player's data
     player_data['scraped_data'] = data
-
     return player_data
-    
-
-main()
