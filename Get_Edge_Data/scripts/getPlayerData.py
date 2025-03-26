@@ -24,7 +24,7 @@ def getPlayerData():
         raw_tricode = team["rawTricode"]
         
         # Construct the endpoint URL for the team
-        endpoint = f"{base_endpoint}{raw_tricode}/20232024"
+        endpoint = f"{base_endpoint}{raw_tricode}/20242025"
 
         # Send a GET request to the endpoint
         response = requests.get(endpoint)
@@ -103,6 +103,7 @@ def getEdgeData():
 
     # Initialize WebDriver
     driver = webdriver.Chrome(options=chrome_options)
+    driver.set_page_load_timeout(10)
 
     # Initialize error list
     error_players = []
@@ -111,6 +112,7 @@ def getEdgeData():
     for team_data in teams_data:
         team_id = team_data['triCode']
         players_file = f'data/{team_id}_players.json'
+        team_player_data = []
 
         # Load players data for the current team
         with open(players_file, 'r') as players_file:
@@ -146,7 +148,9 @@ def getEdgeData():
 
                     # Extract and process table data
                     # Inside the loop where you process each player's data:
-                    all_player_data.append(process_table_data(table, player_data))
+                    data = process_table_data(table, player_data)
+                    all_player_data.append(data)
+                    team_player_data.append(data)
 
                     # Break out of the retry loop if successful
                     break
@@ -159,6 +163,10 @@ def getEdgeData():
             # If retries exceeded, add player to error list
             if retries == 3:
                 error_players.append(player_data)
+        file_path = f'data/{team_id}_players_Full.json'
+        with open(file_path, 'w') as f:
+            json.dump(team_player_data, f, indent=4)
+            
 
     # Write error players data to the error file
     with open('data/error_players.json', 'w') as f:
