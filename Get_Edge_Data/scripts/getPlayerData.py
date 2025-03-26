@@ -47,7 +47,7 @@ def getPlayerData():
 
             all_players.extend(formatted_players)
 
-            output_file_path = f"data/{raw_tricode}_players.json"
+            output_file_path = f"data/generated/{raw_tricode}_players.json"
             with open(output_file_path, "w") as output_file:
                 json.dump(formatted_players, output_file, indent=2)
 
@@ -55,7 +55,7 @@ def getPlayerData():
         else:
             print(f"Failed to retrieve data for {team['fullName']}. Status code:", response.status_code)
 
-    with open("data/players.json", "w") as players_file:
+    with open("data/generated/players.json", "w") as players_file:
         json.dump(all_players, players_file, indent=2)
 
     print("All player data has been written to players.json")

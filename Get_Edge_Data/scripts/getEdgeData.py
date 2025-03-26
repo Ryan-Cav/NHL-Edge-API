@@ -59,7 +59,7 @@ def getEdgeData():
 
     for team_data in teams_data:
         team_id = team_data['triCode']
-        players_file = f'data/{team_id}_players.json'
+        players_file = f'data/generated/{team_id}_players.json'
 
         with open(players_file, 'r') as pf:
             players_data = json.load(pf)
@@ -77,10 +77,10 @@ def getEdgeData():
         else:
             all_player_data.append(player_result)
 
-    with open('data/scraped_data.json', 'w') as f:
+    with open('data/results/scraped_data.json', 'w') as f:
         json.dump(all_player_data, f, indent=4)
 
-    with open('data/error_players.json', 'w') as f:
+    with open('data/results/error_players.json', 'w') as f:
         json.dump(error_players, f, indent=4)
 
     print("Data extraction complete.")
